@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 태그의 우선순위 : 구체적인 것을 기준으로 우선순의가 결정 -->
+    <!-- style="color" 이게 가장 직접적이므로 가장 우선됨 -->
+    <!-- !importanr : 우선순위가 가장 먼저 적용된다. 쉬운 방법이긴 하나 좋은 방법은 아니다. -->
+    <style>
+        li{color: tomato ! important}.classsel{color: aquamarine;}
+        #idsel{color: orange;}
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>html</li>
+        <li class="classsel" id="idsel" style="color: green;">css</li>
+        <li class="classsel">javascript</li>
+    </ul>
+
+    <h1>순서</h1>
+    <ol>
+        <li>style attribute</li>
+        <li>id selector</li>
+        <li>class selector</li>
+        <li>tag selector</li>
+    </ol>
+</body>
+</html>
